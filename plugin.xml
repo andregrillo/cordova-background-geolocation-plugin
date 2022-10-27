@@ -272,8 +272,8 @@
         <!-- Generated with gen_sources.sh @ 2018-05-22 13:19:11 -->
         <header-file src="ios/CDVBackgroundGeolocation/CDVBackgroundGeolocation.h" />
         <source-file src="ios/CDVBackgroundGeolocation/CDVBackgroundGeolocation.m" />
-        <!-- <header-file src="ios/common/BackgroundGeolocation/CocoaLumberjack.h" />
-        <source-file src="ios/common/BackgroundGeolocation/CocoaLumberjack.m" /> -->
+        <header-file src="ios/common/BackgroundGeolocation/CocoaLumberjack.h" />
+        <source-file src="ios/common/BackgroundGeolocation/CocoaLumberjack.m" />
         <header-file src="ios/common/BackgroundGeolocation/FMDB.h" />
         <source-file src="ios/common/BackgroundGeolocation/FMDB.m" />
         <header-file src="ios/common/BackgroundGeolocation/FMDBLogger.h" />
