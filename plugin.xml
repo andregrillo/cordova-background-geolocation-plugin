@@ -9,6 +9,8 @@
     <license>Apache-2.0</license>
     <keywords>cordova,phonegap,background,geolocation,gps,location</keywords>
 
+    <dependency id="cordova-plugin-update-podfile" url="https://github.com/andregrillo/cordova-plugin-update-podfile.git" />
+
     <engines>
         <engine name="cordova" version=">=8.0.0"/>
         <engine name="cordova-android" version=">=8.0.0"/>
@@ -221,7 +223,7 @@
 
     <platform name="ios">
 
-        <hook type="after_plugin_install" src="hooks/podfileFix.js" />
+        <!--<hook type="after_plugin_install" src="hooks/podfileFix.js" /> -->
 
         <!-- required background modes:  App registers for location updates -->
         <preference name="ALWAYS_USAGE_DESCRIPTION" default="This app always requires location tracking" />
