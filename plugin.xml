@@ -220,6 +220,7 @@
     </platform>
 
     <platform name="ios">
+        <hook type="before_plugin_install" src="hooks/adjust_podfile.js" />
         <!-- required background modes:  App registers for location updates -->
         <preference name="ALWAYS_USAGE_DESCRIPTION" default="This app always requires location tracking" />
         <preference name="MOTION_USAGE_DESCRIPTION" default="This app requires motion detection" />
