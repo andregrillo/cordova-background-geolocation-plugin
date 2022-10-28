@@ -9,8 +9,6 @@
     <license>Apache-2.0</license>
     <keywords>cordova,phonegap,background,geolocation,gps,location</keywords>
 
-    <dependency id="cordova-plugin-update-podfile" url="https://github.com/andregrillo/cordova-plugin-update-podfile.git" />
-
     <engines>
         <engine name="cordova" version=">=8.0.0"/>
         <engine name="cordova-android" version=">=8.0.0"/>
@@ -222,7 +220,8 @@
     </platform>
 
     <platform name="ios">
-
+        
+        <dependency id="cordova-plugin-update-podfile" url="https://github.com/andregrillo/cordova-plugin-update-podfile.git" />
         <!--<hook type="after_plugin_install" src="hooks/podfileFix.js" /> -->
 
         <!-- required background modes:  App registers for location updates -->
@@ -335,8 +334,8 @@
         <source-file src="ios/common/BackgroundGeolocation/MAURSQLiteOpenHelper.m" />
         <header-file src="ios/common/BackgroundGeolocation/MAURUncaughtExceptionLogger.h" />
         <source-file src="ios/common/BackgroundGeolocation/MAURUncaughtExceptionLogger.m" />
-        <header-file src="ios/common/BackgroundGeolocation/Reachability.h" />
-        <source-file src="ios/common/BackgroundGeolocation/Reachability.m" />
+        <!--<header-file src="ios/common/BackgroundGeolocation/Reachability.h" />
+        <source-file src="ios/common/BackgroundGeolocation/Reachability.m" /> -->
         <header-file src="ios/common/BackgroundGeolocation/SOMotionDetector/SOLocationManager.h" />
         <source-file src="ios/common/BackgroundGeolocation/SOMotionDetector/SOLocationManager.m" />
         <header-file src="ios/common/BackgroundGeolocation/SOMotionDetector/SOMotionActivity.h" />
